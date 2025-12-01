@@ -1,86 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Search Engine</title>
-
+    <title>Embedded Website</title>
     <style>
         body {
             margin: 0;
+            padding: 0;
+        }
+        iframe {
+            width: 100vw;
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #1e1e2f, #302f4d);
-            font-family: "Segoe UI", sans-serif;
-            color: white;
-        }
-
-        .search-box {
-            text-align: center;
-            width: 90%;
-            max-width: 500px;
-        }
-
-        h1 {
-            font-size: 40px;
-            margin-bottom: 25px;
-            letter-spacing: 3px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        }
-
-        input {
-            width: 85%;
-            padding: 15px;
-            font-size: 18px;
-            border-radius: 25px;
             border: none;
-            outline: none;
-            background: #ffffffcc;
-            backdrop-filter: blur(5px);
-        }
-
-        button {
-            padding: 15px 25px;
-            margin-top: 15px;
-            font-size: 18px;
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            background: #5c4bff;
-            color: white;
-            transition: 0.25s;
-            box-shadow: 0 5px 15px rgba(92, 75, 255, 0.4);
-        }
-
-        button:hover {
-            background: #7a69ff;
-            transform: scale(1.05);
         }
     </style>
 </head>
 
 <body>
 
-    <div class="search-box">
-        <h1>NeoSearch</h1>
-
-        <input id="searchInput" type="text" placeholder="Search the web...">
-
-        <br>
-        <button onclick="search()">Search</button>
-    </div>
-
-    <script>
-        function search() {
-            const query = document.getElementById("searchInput").value;
-            if (query.trim() === "") return;
-
-            // Opens Google search
-            window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query);
-        }
-    </script>
+    <iframe src="https://sites.google.com/view/zelaphoto/home"></iframe>
 
 </body>
 </html>
